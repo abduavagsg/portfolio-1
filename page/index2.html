@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Karuta Interactive Learning</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <!-- رأس الصفحة -->
+    <header>
+        <h1>🎴 Karuta Interactive</h1>
+        <p>تعلّم 35 قصيدة يابانية (Hyakunin Isshu)</p>
+        
+        <!-- أزرار التحكم الرئيسية -->
+        <div class="btn-group">
+            <button id="start-btn">📖 عرض البطاقات</button>
+            <button id="discover-btn">✨ اكتشاف عشوائي</button>
+            <button id="quiz-btn">🎯 اختبار</button>
+            <button id="reset-btn">🔄 إعادة تعيين</button>
+        </div>
+        
+        <!-- شريط البحث -->
+        <div class="search-bar">
+            <input type="text" id="search-input" placeholder="ابحث برقم البطاقة، الشاعر، أو الكيماريجي..." />
+            <button id="search-btn">🔍 بحث</button>
+        </div>
+        
+        <!-- عرض النقاط والمؤقت -->
+        <div class="stats">
+            <span id="score-display">🏆 Score: 0</span>
+            <span id

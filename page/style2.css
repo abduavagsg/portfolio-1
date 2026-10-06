@@ -1,0 +1,262 @@
+/* ---------- Reset and Base ---------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f9f4ed;
+    color: #2d2a24;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 1rem;
+}
+
+/* ---------- Header ---------- */
+header {
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+header h1 {
+    font-size: 2.8rem;
+    background: linear-gradient(135deg, #b22222, #8b1a1a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 1px;
+}
+
+header p {
+    font-size: 1.1rem;
+    color: #5a4f42;
+    margin-top: 0.3rem;
+}
+
+.btn-group {
+    margin-top: 1.5rem;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.btn-group button {
+    padding: 0.8rem 2.2rem;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 40px;
+    background: #8b1a1a;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    box-shadow: 0 4px 10px rgba(139, 26, 26, 0.3);
+}
+
+.btn-group button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 18px rgba(139, 26, 26, 0.4);
+    background: #a52222;
+}
+
+.btn-group button:active {
+    transform: scale(0.96);
+}
+
+/* ---------- Cards Section ---------- */
+#cards-section {
+    width: 100%;
+    max-width: 1200px;
+    margin: 1.5rem 0;
+}
+
+#cards-section h2 {
+    text-align: center;
+    font-weight: 400;
+    color: #3d352b;
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid #d4c5b2;
+    padding-bottom: 0.5rem;
+}
+
+#cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+    gap: 1.2rem;
+}
+
+/* ---------- Individual Card ---------- */
+.karuta-card {
+    background: white;
+    border: 1px solid #e3d6c8;
+    border-radius: 14px;
+    padding: 1.2rem 0.8rem;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #1f1b16;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.04);
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+}
+
+.karuta-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.08);
+    border-color: #b22222;
+    background: #fefbf8;
+}
+
+.card-number {
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: #8b1a1a;
+    background: #f0e8df;
+    padding: 0.1rem 0.8rem;
+    border-radius: 30px;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.card-kimariji {
+    color: #b22222;
+    font-weight: 700;
+    background: #fce9e3;
+    padding: 0.1rem 0.6rem;
+    border-radius: 12px;
+    font-size: 0.9rem;
+    margin-top: 4px;
+}
+
+/* ---------- Details Modal ---------- */
+#card-details {
+    position: fixed;
+    inset: 0;
+    background: rgba(20, 18, 16, 0.6);
+    backdrop-filter: blur(4px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+    z-index: 999;
+    transition: opacity 0.3s;
+}
+
+#card-details.hidden {
+    display: none;
+}
+
+#card-details-content {
+    background: #fffcf9;
+    max-width: 680px;
+    width: 100%;
+    padding: 2rem 2.2rem 2.5rem;
+    border-radius: 28px;
+    box-shadow: 0 30px 60px rgba(0,0,0,0.3);
+    position: relative;
+    animation: fadeUp 0.3s ease;
+}
+
+@keyframes fadeUp {
+    0% { opacity: 0; transform: translateY(30px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+#close-btn {
+    position: absolute;
+    top: 12px;
+    left: 18px;
+    background: none;
+    border: none;
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: #6b5b4b;
+    transition: 0.2s;
+}
+
+#close-btn:hover {
+    color: #b22222;
+    transform: rotate(90deg);
+}
+
+#card-details-content h2 {
+    color: #8b1a1a;
+    font-size: 1.8rem;
+    margin-bottom: 0.8rem;
+    text-align: center;
+}
+
+.japanese-verse {
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+    margin: 0.8rem 0;
+    color: #1d1a16;
+    font-weight: 500;
+    text-align: center;
+}
+
+.hiragana-reading {
+    font-size: 1.2rem;
+    text-align: center;
+    background: #f4ede6;
+    padding: 0.6rem 1rem;
+    border-radius: 14px;
+    margin: 0.6rem 0;
+}
+
+.kimariji-red {
+    color: #b22222;
+    font-weight: 700;
+}
+
+.romaji {
+    font-size: 1rem;
+    color: #4d4036;
+    text-align: center;
+    margin: 0.4rem 0;
+    font-style: italic;
+}
+
+.poet {
+    font-weight: 600;
+    color: #2d261f;
+    margin: 0.6rem 0 0.2rem;
+}
+
+.kimariji-note {
+    background: #f3ebe3;
+    padding: 0.8rem 1rem;
+    border-radius: 14px;
+    margin-top: 1.2rem;
+    font-size: 0.95rem;
+    text-align: center;
+    border-right: 4px solid #b22222;
+}
+
+/* ---------- Footer ---------- */
+footer {
+    margin-top: 3rem;
+    color: #8f7e6b;
+    font-size: 0.9rem;
+    border-top: 1px solid #ddd0c2;
+    padding-top: 1.5rem;
+    width: 100%;
+    text-align: center;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 600px) {
+    header h1 { font-size: 2rem; }
+    .btn-group button { padding: 0.6rem 1.2rem; font-size: 1rem; }
+    #cards-container { grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); }
+    .japanese-verse { font-size: 1.3rem; }
+    #card-details-content { padding: 1.5rem; }
+}
