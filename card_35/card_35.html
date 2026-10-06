@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Karuta Cards</title>
+  <link rel="stylesheet" href="card_35.css" />
+</head>
+<body>
+
+  <h1 class="title">Karuta Cards</h1>
+
+   <button id="start-btn">
+    Start Learning
+</button>
+
+<section id="cards-section" class="hidden">
+    <h2>The 35 Karuta Cards - かるたのカード</h2>
+    <p>Click on any card to read its poem.</p>
+    <p class="kimariji-explain">
+        The syllables written in <span class="kimariji-red">red</span> are the
+        <strong>Kimariji (決まり字)</strong>: the "deciding syllables" of each poem.
+        The moment a player hears them, he knows which card to take,
+        even before the reader finishes the poem. Memorizing the kimariji
+        is the secret of every Karuta champion!
+    </p>
+    <div id="cards-container"></div>
+</section>
+<div id="card-details" class="hidden">
+    <div id="card-details-box">
+        <button id="close-btn">X Close</button>
+        <div id="card-details-content"></div>
+    </div>
+</div>
+
+  <script src="card_35.js"></script>
+</body>
+</html>
