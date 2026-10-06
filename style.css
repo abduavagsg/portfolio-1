@@ -1,0 +1,195 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: antiquewhite;
+    color: teal;
+}
+h1 {
+    color: darkred;
+    font-size: 36px;
+    text-align: center;
+}
+h2,
+h3{
+    color: darkgreen;
+    line-height: 1.6;
+}
+p{
+     font-size: 18px;
+    line-height: 1.6;
+}
+button{
+    background-color: darkviolet;
+    color: lightgoldenrodyellow;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+}
+h1,
+h2,
+h3,
+p{
+    margin-top: 12px;
+    margin-bottom: 14px;
+}
+button{
+    margin-top: 14px;
+    margin-bottom: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+button:hover{
+    background-color: darkblue;
+}
+a{
+    color: gold;
+    text-decoration: none;
+}
+a:hover{
+    color: forestgreen;
+}
+form{
+    margin-top: 14px;
+    margin-bottom: 16px;
+}
+#hero{
+    display:flex;
+background-color: indianred;
+padding: 32px;
+border-radius: 12px;
+align-items: center;
+gap: 32px;
+position: relative;
+}
+.badge{
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    background-color: darkgreen;
+    color: lightseagreen;
+    padding: 8px 12px;
+    border-radius: 200px;
+    font-size: 16px;
+}
+.entro{
+    color: deepskyblue;
+    font-weight: bold;
+}
+#first{
+padding: 32px;
+border-radius: 12px;
+}
+#second{
+padding: 32px;
+border-radius: 12px;
+}
+#question{
+padding: 32px;
+border-radius: 12px;
+}
+.cards-section{
+    display: flex;
+    gap: 20px;
+    width: 30%;
+}
+label{
+    font-weight: bold;
+    display: block;
+    margin-bottom: 6px;
+}
+input{
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 16px;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+}
+input:focus{
+    outline: none;
+    border-color: #1d4ed8;
+    background-color: aqua;
+}
+#hero img{
+    border-radius: 18px;
+}
+#cards img{
+    width: 100%;
+    border-radius: 16px;
+}
+section{
+    margin: 40px;
+}
+.navbar {
+background-color: darkcyan;
+padding: 20px 32px;
+border-radius: 12px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.navbar h2{
+    color: ghostwhite;
+}
+.nav-links{
+    display: flex;
+    gap: 18px;
+}
+.nav-links a{
+    color: #111827;
+    text-decoration: wavy;
+    font-weight: bold;
+}
+.nav-links a:hover{
+    color: chartreuse;
+}
+.banner {
+    position: relative;
+    margin-top: 40px;
+    margin-bottom: 60px;
+    border-radius: 12px;
+    overflow: hidden;
+}
+.banner-text {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    color: white;
+    max-width: 400px;
+}
+.banner_2 {
+    position: relative;
+    margin-top: 40px;
+    margin-bottom: 60px;
+    border-radius: 12px;
+    overflow: hidden;
+}
+.banner_2-text {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    color: white;
+    max-width: 400px;
+}
+#showVideo{
+    background-color:#d62828;
+    color:white;
+    padding:12px 25px;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:18px;
+}
+
+#videoContainer{
+    margin-top:20px;
+    text-align:center;
+}
+section{
+
+opacity:0;
+
+transform:translateY(80px);
+
+transition:1s;
+
+}
